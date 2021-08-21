@@ -86,7 +86,7 @@ HYPHEN_INSENSITIVE="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git zsh-autosuggestions history-substring-search zsh-syntax-highlighting)
-source $ZSH_CUSTOM/plugins/zsh-syntax-highlighting/dracula.sh
+source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/dracula.sh
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -119,6 +119,7 @@ alias Nq='exit'
 alias muse-dash='WINEPREFIX=/home/ryu/.local/share/wineprefixes/muse-dash wine ~/.local/share/wineprefixes/muse-dash/drive_c/Games/Muse\ Dash\ Nanahira\ Festival/MuseDash.exe'
 alias steins-gate-0='cd /home/ryu/Videos/STEINS\;GATE\ 0/; WINEPREFIX=/home/ryu/.local/share/wineprefixes/steins-gate-0 wine /home/ryu/Videos/STEINS\;GATE\ 0/LauncherC0.exe'
 alias git-config='git config --local user.name "Ryu18" && git config --local user.email "ryu@tpgjbo.xyz"'
+alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 bypass-clyde(){
     convert "$1" -print "%wx%h" /dev/null |\

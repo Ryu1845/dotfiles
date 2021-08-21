@@ -1,1 +1,0 @@
-/home/ryu/.vim/vimrc
