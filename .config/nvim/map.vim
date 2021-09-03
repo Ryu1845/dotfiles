@@ -31,14 +31,14 @@ nnoremap ]<space>  :<c-u>put =repeat(nr2char(10), v:count1)<cr>
 nnoremap <leader>v <cmd>CHADopen<cr>
 
 " Luasnip mappings
-imap <silent><expr> <Tab> luasnip#expand_or_jumpable() ? '<Plug>luasnip-expand-or-jump' : '<Tab>'
-inoremap <silent> <S-Tab> <cmd>lua require'luasnip'.jump(-1)<Cr>
-
-snoremap <silent> <Tab> <cmd>lua require('luasnip').jump(1)<Cr>
-snoremap <silent> <S-Tab> <cmd>lua require('luasnip').jump(-1)<Cr>
-
-imap <silent><expr> <C-E> luasnip#choice_active() ? '<Plug>luasnip-next-choice' : '<C-E>'
-smap <silent><expr> <C-E> luasnip#choice_active() ? '<Plug>luasnip-next-choice' : '<C-E>'
+" imap <silent><expr> <Tab> luasnip#expand_or_jumpable() ? '<Plug>luasnip-expand-or-jump' : '<Tab>'
+" inoremap <silent> <S-Tab> <cmd>lua require'luasnip'.jump(-1)<Cr>
+"
+" snoremap <silent> <Tab> <cmd>lua require('luasnip').jump(1)<Cr>
+" snoremap <silent> <S-Tab> <cmd>lua require('luasnip').jump(-1)<Cr>
+"
+" imap <silent><expr> <C-E> luasnip#choice_active() ? '<Plug>luasnip-next-choice' : '<C-E>'
+" smap <silent><expr> <C-E> luasnip#choice_active() ? '<Plug>luasnip-next-choice' : '<C-E>'
 
 " Quick fix mappings
 " use <C-N> and <C-P> for next/prev.
@@ -47,3 +47,11 @@ nnoremap <silent> <C-P> <cmd>QPrev<CR>
 " toggle the quickfix open/closed without jumping to it
 nnoremap <silent> <leader>q <cmd>QFToggle!<CR>
 nnoremap <silent> <leader>l <cmd>LLToggle!<CR>
+
+" Split navigation
+" set c-o to c-r
+nnoremap <C-O> <C-R>
+nnoremap <C-T> <C-W><C-J>
+nnoremap <C-S> <C-W><C-K>
+nnoremap <C-R> <C-W><C-L>
+nnoremap <C-C> <C-W><C-H>

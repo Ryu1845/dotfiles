@@ -44,6 +44,10 @@ require "format".setup {
         {cmd = {"black"}},
         {cmd = {"isort"}}
     },
+    rust = {
+        {cmd = {"cargo fix"}},
+        {cmd = {"cargo fmt"}}
+    },
     vim = {
         {
             cmd = {"luafmt -w replace"},

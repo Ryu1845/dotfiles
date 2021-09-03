@@ -19,7 +19,7 @@ capabilities.textDocument.completion.completionItem.resolveSupport = {
 }
 
 -- Enable some language servers with the additional completion capabilities offered by nvim-cmp
-local servers = {"rust_analyzer", "pyright", "vimls"}
+local servers = {"pyright", "vimls"}
 for _, lsp in ipairs(servers) do
     nvim_lsp[lsp].setup {
         -- on_attach = my_custom_on_attach,
