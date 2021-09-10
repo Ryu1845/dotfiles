@@ -1,4 +1,5 @@
 from libqtile import widget
+
 from .theme import colors
 
 # Get the icons at https://www.nerdfonts.com/cheat-sheet (you need a Nerd Font)
@@ -68,7 +69,7 @@ primary_widgets = [
     ),
     powerline("color3", "color4"),
     icon(bg="color3", text=" "),  # Icon: nf-fa-feed
-    widget.Net(**base(bg="color3"), interface="wlp2s0"),
+    # widget.Net(**base(bg="color3"), interface="wlp2s0"),
     powerline("color2", "color3"),
     widget.CurrentLayoutIcon(**base(bg="color2"), scale=0.65),
     widget.CurrentLayout(**base(bg="color2"), padding=5),
