@@ -40,4 +40,10 @@ else
   let &listchars = 'tab:> ,extends:>,precedes:<,nbsp:.'
 endif
 
+set backup
+set backupext   =-vimbackup
+set backupskip  =
+set updatecount =100
+set undofile
+
 colorscheme dracula

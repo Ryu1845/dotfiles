@@ -118,6 +118,8 @@ alias ls='lsd'
 alias Nq='exit'
 alias git-config='git config --local user.name "Ryu18" && git config --local user.email "ryu@tpgjbo.xyz"'
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias ssh="kitty +kitten ssh"
+alias nvim="nvim -W ~/.vimlog"
 
 bypass-clyde(){
     convert "$1" -print "%wx%h" /dev/null |\

@@ -28,6 +28,7 @@ call plug#begin(stdpath('config') . '/bundle')
     Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
     Plug 'jghauser/kitty-runner.nvim'
     Plug 'lukas-reineke/format.nvim'
+    Plug 'wakatime/vim-wakatime'
 " DEVELOPER
     Plug 'neovim/nvim-lspconfig'
     Plug 'simrat39/rust-tools.nvim'
