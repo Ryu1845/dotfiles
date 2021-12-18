@@ -48,13 +48,13 @@ keys = [
         ([mod], "b", lazy.spawn("brave")),
         # File Explorer
         ([mod], "e", lazy.spawn("pcmanfm")),
-        # Emacs
+        # Terminal
         ([mod], "Return", lazy.spawn("kitty")),
         # Discord
         ([mod], "d", lazy.spawn("discord-canary")),
         # Screenshot
-        ([mod], "s", lazy.spawn("maim")),
-        ([mod, "shift"], "s", lazy.spawn("maim -s")),
+        ([mod], "s", lazy.spawn("scrot")),
+        ([mod, "shift"], "s", lazy.spawn("scrot -s")),
         # ------------ Hardware Configs ------------
         # Volume
         (

@@ -13,7 +13,8 @@ fi
 # Path to your oh-my-zsh installation.
 export ZSH="/home/ryu/.oh-my-zsh"
 export CODE="/home/ryu/Documents/Code"
-export PATH="/home/ryu/.local/bin:/home/ryu/.deta/bin:$PATH"
+export WORK="/home/ryu/Documents/Work"
+export PATH="/home/ryu/.local/bin:$PATH"
 export LESSOPEN="| /usr/bin/src-hilite-lesspipe.sh %s"
 export LESS=' -R '
 export PYTHONPATH='/usr/lib/python3.9/site-packages/pdm/pep582':$PYTHONPATH
@@ -85,7 +86,7 @@ HYPHEN_INSENSITIVE="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions history-substring-search zsh-syntax-highlighting)
+plugins=(git pip zsh-autosuggestions history-substring-search zsh-syntax-highlighting)
 source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/dracula.sh
 source $ZSH/oh-my-zsh.sh
 

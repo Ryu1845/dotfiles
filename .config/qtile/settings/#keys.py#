@@ -49,14 +49,14 @@ keys = [
         # File Explorer
         ([mod], "e", lazy.spawn("pcmanfm")),
         # Emacs
-        ([mod], "Return", lazy.spawn("kitty")),
+        ([mod], "Return", lazy.spawn("emacs")),
         # Discord
         ([mod], "d", lazy.spawn("discord-canary")),
         # Screenshot
         ([mod], "s", lazy.spawn("maim")),
         ([mod, "shift"], "s", lazy.spawn("maim -s")),
         # ------------ Hardware Configs ------------
-        # Volume
+      
         (
             [],
             "XF86AudioLowerVolume",
