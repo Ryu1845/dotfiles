@@ -3,13 +3,33 @@
 # https://github.com/antoniosarosi/dotfiles
 
 # Qtile keybindings
-
+import subprocess
+from time import time
+from pathlib import Path
 from libqtile.config import Key
 from libqtile.command import lazy
 
 
-mod = "mod4"
+def screenshot(save=True, copy=True):
+    def f(qtile):
+        path = Path.home() / "Pictures"
+        path /= f"screenshot_{str(int(time() * 100))}.png"
+        shot = subprocess.run(["maim", "-s"], stdout=subprocess.PIPE)
 
+        if save:
+            with open(path, "wb") as sc:
+                sc.write(shot.stdout)
+
+        if copy:
+            subprocess.run(
+                ["xclip", "-selection", "clipboard", "-t", "image/png"],
+                input=shot.stdout,
+            )
+
+    return f
+
+
+mod = "mod4"
 keys = [
     Key(key[0], key[1], *key[2:])
     for key in [
@@ -48,13 +68,12 @@ keys = [
         ([mod], "b", lazy.spawn("brave")),
         # File Explorer
         ([mod], "e", lazy.spawn("pcmanfm")),
-        # Emacs
+        # Terminal
         ([mod], "Return", lazy.spawn("kitty")),
         # Discord
         ([mod], "d", lazy.spawn("discord-canary")),
         # Screenshot
-        ([mod], "s", lazy.spawn("maim")),
-        ([mod, "shift"], "s", lazy.spawn("maim -s")),
+        ([], "Print", lazy.function(screenshot())),
         # ------------ Hardware Configs ------------
         # Volume
         (

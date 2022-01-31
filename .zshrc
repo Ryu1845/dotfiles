@@ -14,12 +14,11 @@ fi
 export ZSH="/home/ryu/.oh-my-zsh"
 export CODE="/home/ryu/Documents/Code"
 export WORK="/home/ryu/Documents/Work"
-export PATH="/home/ryu/.local/bin:$PATH"
+export PATH="/home/ryu/.local/bin:/home/ryu/.nimble/bin:$PATH"
 export LESSOPEN="| /usr/bin/src-hilite-lesspipe.sh %s"
 export LESS=' -R '
 export PYTHONPATH='/usr/lib/python3.9/site-packages/pdm/pep582':$PYTHONPATH
-export MCFLY_FUZZY=true
-export MCFLY_KEY_SCHEME=emacs
+export CHROME_EXECUTABLE=/usr/bin/brave
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -137,3 +136,4 @@ if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
 fi
 eval "$(mcfly init zsh)"
 bindkey '^N' mcfly-history-widget
+export PATH="$PATH:~/bin"
