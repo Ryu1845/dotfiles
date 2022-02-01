@@ -1,0 +1,13 @@
+{
+    "version": "1.5.0",
+    "emoteVersion": "v1.5.0",
+    "drawerStates": {
+        "settings": {
+            "general": false,
+            "addons": false,
+            "customcss": false,
+            "developer": false,
+            "window": true
+        }
+    }
+}

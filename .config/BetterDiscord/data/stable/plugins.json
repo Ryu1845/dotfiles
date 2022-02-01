@@ -1,0 +1,20 @@
+{
+    "BDFDB": false,
+    "ZeresPluginLibrary": false,
+    "XenoLib": false,
+    "BetterImageViewer": true,
+    "BiggerStreamPreview": false,
+    "FreeEmojis": false,
+    "FileViewer": false,
+    "FreeStickers": true,
+    "MessageLoggerV2": true,
+    "PluginRepo": true,
+    "ShowHiddenChannels": true,
+    "SplitLargeMessages": false,
+    "ThemeRepo": true,
+    "ThemeSettings": true,
+    "TopRoleEverywhere": true,
+    "TypingIndicator": true,
+    "WhoReacted": true,
+    "RemoveChatButtons": false
+}

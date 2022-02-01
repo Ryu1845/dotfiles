@@ -1,0 +1,16 @@
+{
+	"general": {
+		"addUserId": false,
+		"disableForBots": true,
+		"includeColorless": false,
+		"showOwnerRole": false,
+		"useBlackFont": false,
+		"useOtherStyle": false,
+		"userIdFirst": false
+	},
+	"places": {
+		"chat": true,
+		"memberList": true,
+		"voiceList": true
+	}
+}
